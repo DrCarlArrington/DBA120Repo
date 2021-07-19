@@ -1,0 +1,132 @@
+<html><head>
+    <style type="text/css">
+    p, ul, ol, li
+         {font-family:Arial;font-size:10pt;font-weight:normal;}
+    h1	{font-family:Arial;font-size:16pt;font-weight:bold;}
+    h2	{font-family:Arial;font-size:14pt;font-weight:bold;}
+    h3	{font-family:Arial;font-size:12pt;font-weight:bold;}
+    strong	{font-family:Arial;font-size:10pt;font-weight:bold;}
+    em	{font-family:Arial;font-size:10pt;font-weight:italic;}
+    .style1 {
+        color: #990000;
+        font-weight: bold;
+    }
+    .style5 {
+        font-family: "Courier New", Courier, mono;
+        font-size: 9pt;
+    }
+    body {
+        background-image: url("https://cdn.pixabay.com/photo/2017/06/10/07/10/database-2389207_960_720.png");
+    }
+    </style><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>Installing Oracle 19c on Windows</title></head>
+    <body>
+    
+    <h1 align="center">Installing Oracle Database 19c on Windows</h1>
+    <table width="1112" border="1" align="center">
+      <tbody><tr>
+        <td width="1102"><p><font face="Comic Sans MS" size="2">Please feel 
+    free to use the installation Guide for your own personal use, 
+    advancement and training. The material is designed for DBA120 Students, I 
+    kindly ask you respect the time and effort I have put into this work by
+     not distributing copies, either in whole or in part, for your personal 
+    gain. Under no circumstances you can download, cache or host copies of 
+    the Guide on your own servers.
+        </td>
+      </tr>
+    </tbody></table>
+    <br>
+    <hr width="95%" size="1" noshade="noshade">
+    <br>
+    <center>
+    <h2>Step 1: Download Oracle 19c to Your Windows</h2>
+    <p>Download Oracle zip file from <a href="https://www.oracle.com/database/technologies/oracle-database-software-downloads.html#19c" target="_blank">Oracle database 19c download site</a> (plain text link: <span class="style5">https://www.oracle.com/database/technologies/oracle-database-software-downloads.html#19c</span>) as shown below:</p>
+    <img src="assets/images/img01.JPG" width="900" height="384" title="Oracle 19c downloading site: 
+    http://www.oracle.com/technetwork/database/enterprise-edition/downloads/oracle12c-windows-3633015.html"/>
+    <br><br><p>Click to Accept License Agreement radio button. The download file named &quot;WINDOWS.X64_193000_db_home.zip&quot; should then be available in your default download folder. It should look like this:</p>
+    <p><img src="assets/images/img02.JPG" width="300" height="180" title="WINDOWS.X64_193000_db_home.zip on the Desktop"></p>
+    <hr width="95%" size="1" noshade="noshade">
+    <h2>Step 2: Extract the Download File to the Hard Drive</h2>
+    <p>Select 'Compressed Folder Tools' -> 'Extract All' to extract the file directly to C:\ drive.</p>
+    <p><img src="assets/images/img03.JPG" width="516" height="354" alt=""/></p>
+    <p>Open the extracted folder. A setup executable file is there. Double click on it.</p>
+    <p><img src="assets/images/img04.JPG" width="479" height="297" alt=""/></p>
+    <p>The Oracle 12c installer launches.</p>
+    <p><img src="assets/images/img05.JPG" width="471" height="269" alt=""/> </p>
+    <p>Check to <span class="style5">Create and configure a single instance database</span> and click <span class="style5">Next</span> button.</p>
+    <p><img src="assets/images/img06.JPG" width="1200" height="800" alt=""/> </p>
+    <p>Check to select a <span class="style5">Desktop class</span> and click <span class="style5">Next</span> button.</p>
+    <p><img src="assets/images/img07.JPG" width="1200" height="800" alt=""/> </p>
+    <p>Check to select <span class="style5">Use Virtual Account</span> and click <span class="style5">Next</span> button.</p>
+    <p><img src="assets/images/img08.JPG" width="1200" height="800" alt=""/> </p>
+    <p>Here comes the <span class="style1">important</span> step. You have the database name <span class="style5">ORCL</span> by default. It may also have the domain name such as your company or your PC name. That is completely Okay. The most important thing you need to remember is the password you create at this step.  You enter the password of your choice. No need to worry about the password complexity because you use this Oracle for the purpose of studying SQL instead of managing production profit.</p>
+    <p>In this instance, I recommend using <q><b>password</b></q> for the password.</p>
+    <p><img src="assets/images/img09.JPG" width="559" height="420" alt=""/></p>
+    <p>This starts Oracle database installation by doing the prerequisite checks.</p>
+    <p><img src="assets/images/img10.JPG" width="640" height="479" alt=""/></p>
+    <p>A list of settings show up. Click <span class="style5">Install</span> button.</p>
+    <p><img src="assets/images/img11.JPG" width="640" height="480" alt=""/></p>
+    <p>The whole installation takes about 10 - 20 minutes depending on your PC's performance.</p>
+    <p><img src="assets/images/img12.JPG" width="638" height="478" alt=""/></p>
+    <p>During the installation, you may see the following Windows Security Alert window pops up. Just click <span class="style5">Allow Access</span> after you check the following:</p>
+    <ul>
+      <li class="style5">Private networks, such as my home or work network.</li>
+    </ul>
+    <p><img src="assets/images/img13.JPG" width="543" height="423" alt="Allow Windows firewall go through Oracle installation."/></p>
+    <p><span class="style1">Note</span>: You may or may not have the problem arising at Net configuration step. Most people do not have this problem. However, if there is a problem, that usually contributes to the reason of lack Visual C++ Redistributable for Visual Studio. The current version is of 2015. You may get the redistributable package from the web site at: <a href="https://www.microsoft.com/en-gb/download/confirmation.aspx?id=48145" target="_blank">Visual C++ Redistributable for Visual Studio 2015</a> (Plain text link - https://www.microsoft.com/en-gb/download/confirmation.aspx?id=48145).</p>
+    <p>This completes the whole installation.</p>
+    <p><img src="assets/images/img14.JPG" width="640" height="480" alt=""/></p>
+    <hr>
+    <h2>Step 3: Create an Oracle User</h2>
+    <p>Finishing Oracle database 19c installation is just the initial step. You also need to create a SQL developer and SQL programmer in order to work on Oracle database.</p>
+    <p>We work on writing SQL code in SQLPlus environment, which is a command line based environment.</p>
+    <p>To access Oracle via SQLPlus, you go to Start &gt; All Programs &gt; Oracle - OraDB19Home1 &gt; SQL Plus.</p>
+    <p><img src="assets/images/img15.JPG" width="356" height="523" alt=""/></p>
+    <p>As an initial start, you login as the user <span class="style5">SYS as SYSDBA</span> with the password of your choice created in previous step.</p>
+    <p><img src="assets/images/img16.JPG" width="684" height="258" alt=""/></p>
+    </center>
+    <p>After you login, as shown below. You need to type the following 3 lines of SQL statements or commands at the SQLPlus prompt (<em>i.e.</em> <span class="style5">SQL&gt;</span> ).</p>
+    <p>Note: Each of the following statements must end with a semicolon (<em>i.e.</em> <span class="style5">;</span>).</p>
+    <ol>
+      
+      <li class="style5">ALTER SESSION SET "_ORACLE_SCRIPT" = True;</li>
+      <li class="style5">CREATE USER scott IDENTIFIED BY tiger;</li>
+      <li class="style5">GRANT connect, resource, create view, create materialized view, create synonym, create sequence, create procedure, create any index, unlimited tablespace to scott;</li>
+    </ol>
+    <p><img src="assets/images/img17.JPG" width="1400" height="249" alt="granting the privileges"/></p>
+    <center>
+    <p>By doing the above, you have successfully created user <span class="style5">scott</span> with the password of <span class="style5">tiger</span> as well as the necessary privileges and roles.</p>
+        <p>Now. Type <span class="style5">exit</span> at the SQL prompt to exit your Oracle SQL*Plus.</p>
+
+    <hr size="1" noshade="noshade">
+    <h3>Step 4: Populate Data in scott Schema</h3>
+    <p>All right.  Now you can access Oracle by login as user <span class="style5">scott</span> with the password of <span class="style5">tiger</span>. Do it now.</p>
+    <p>A shortcut of accessing your Oracle SQL*Plus is simply hold down your Windows icon key and press letter R on your keyboard. This is shown in the following:</p>
+    <p><img src="assets/images/img18.JPG" width="399" height="204" alt="launching the windows command line"/></p>
+    <p>Type the command <span class="style5">cmd</span> (<em>i.e.</em> to start your command line window). Click <span class="style5">OK</span> button.  You will launch the command line window.</p>
+    <p><img src="assets/images/img19.JPG" width="457" height="206" alt="command line window"/></p>
+    <p>Type <span class="style5">sqlplus</span>, and press your <span class="style5">ENTER</span> key.</p>
+    <p>As mentioned, your user name is <span class="style5">scott</span>, and the password is <span class="style5">tiger</span>.</p>
+    <p>To populate Data in your scott schema, you need to create tables to practice. I have the table creation script for you to download named <b>demo.sql</b> <br><br><a href="assets/files/demo.sql" target="_blank">Click here to download demo.sql</a>. Mouse over the file and right click it to save it to your hard drive. <br><br>Let's say you save it to your desktop.  </p>
+    <p>Hence, in my case, the file is at: <span class="style5">C:\Users\carl_\Desktop\demo.sql</span></p>
+    <p>Then, at SQL prompt (<em>i.e</em>. <span class="style5">SQL&gt; </span>) of your SQLPlus, type the following:</p>
+    <p class="style5">START C:\Users\carl_\Desktop\demo.sql</p>
+    <p><img src="assets/images/img20.JPG" width="633" height="250" alt=""/></p>
+        <p>Bingo! Now, if you check the catalog of your <span class="style5">scott</span> account by issuing the following SQL statement.</p>
+    <p class="style5">SELECT table_name FROM cat;</p>
+    <p>You will see the following:</p>
+    <p><img src="assets/images/img21.JPG" width="250" height="268" alt="SELECT * FROM cat;"/></p>
+    
+    <hr size="1" noshade="noshade">
+        
+    <h3>Step 5: Your task. Create and Populate JustLee Database Tables</h3>
+    
+    <p>You have seen how I handle the demo.sql script above. For you to practice, I would like you to create and populate the JustLee database tables. <br><br>The script called <span class="style5">JLDB_Build.sql</span> is available at: <a href="assets/files/demo.sql" target="_blank">Click here to download JLDB_Build.sql</a>
+    <p>Once you are download the file to your hard drive as shown before, at the SQL prompt, type: <p class="style5">SELECT table_name FROM cat;</p>
+    <p>Check if you have a table called <span  class="style5">Publisher</span>.</p>
+    </center>
+    <hr size="1" noshade="noshade">
+    <p class="style5">All Materials Copyright  @ Dr. Carl Arrington on
+      <!-- #BeginDate format:fcAm1a -->Saturday, July 19, 2021 7:25 PM<!-- #EndDate --> </p>
+    
+    
+    </body></html>
