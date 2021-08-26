@@ -18,7 +18,7 @@
     body {
         background-image: url("https://cdn.pixabay.com/photo/2017/06/10/07/10/database-2389207_960_720.png");
     }
-    </style><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>Installing Oracle 19c on Windows</title></head>
+    </style><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>Installing PostgreSQL on Windows</title></head>
     <body>
     
     <h1 align="center">Installing PostgreSQL on Windows</h1>
@@ -38,7 +38,7 @@
     <hr width="95%" size="1" noshade="noshade">
     <br>
     <center>
-    <h2>Step 1: Download Oracle 19c to Your Windows</h2>
+    <h2>Step 1: Download and install PostgreSQL for Windows</h2>
     <p>Please view the following video:</p>
 
     <iframe width="800" height="600" src="assets/files/Postgres Demo (SQL overview)_default.mp4" frameborder="0" allowfullscreen></iframe>
@@ -53,16 +53,30 @@
 
     
     <hr size="1" noshade="noshade">
+
+    <h3>Step 3: Populate Data in a Database Table using a PostgreSQL .sql file</h3>
+    <p>Please view the following video:</p>
+
+    <iframe width="800" height="600" src="assets/files/DBA 120 - Populating a Database using an external SQL Script_default.mp4" frameborder="0" allowfullscreen></iframe>
+    </iframe>
+
+    <p>The SQL script called <span class="style5">PostgresDemo.sql</span> is available for download at at: <a href="assets/files/PostgresDemo.sql" target="_blank">Click here to download PostgresDemo.sql</a>
+
         
-    <h3>Step 5: Your task. Create and Populate JustLee Database Tables</h3>
+    <h3>Step 4: Your task. Create and Populate JustLee Database Tables</h3>
     
-    <p>You have seen how I handle the demo.sql script above. For you to practice, I would like you to create and populate the JustLee database tables. <br><br>The script called <span class="style5">JLDB_Build.sql</span> is available at: <a href="assets/files/demo.sql" target="_blank">Click here to download JLDB_Build.sql</a>
-    <p>Once you are download the file to your hard drive as shown before, at the SQL prompt, type: <p class="style5">SELECT table_name FROM cat;</p>
+    <p>You have seen how I handle the PostgresDemo.sql script above. For you to practice, I would like you to create and populate the JustLee database tables. <br><br>
+        Create a new Database named JustLee, then use the JustLee Postgres SQL script to populate the database 
+        <br><br>The script called <span class="style5">Postgres_JLDB_Build.sql</span> is available at: <a href="assets/files/Postgres_JLDB_Build.sql" target="_blank">Click here to download Postgres_JLDB_Build.sql</a>
+    <p>Once you are download the file to your hard drive as shown before, Launch pgAdmin, create the JustLee database, then open up the Query Tool and enter: <p class="style5">SELECT table_name
+        FROM information_schema.tables
+        WHERE table_type='BASE TABLE'
+        AND table_schema='public';</p>
     <p>Check if you have a table called <span  class="style5">Publisher</span>.</p>
     </center>
     <hr size="1" noshade="noshade">
     <p class="style5">All Materials Copyright  @ Dr. Carl Arrington on
-      <!-- #BeginDate format:fcAm1a -->Monday, July 19, 2021 7:25 PM<!-- #EndDate --> </p>
+      <!-- #BeginDate format:fcAm1a -->Thursday, August 26, 2021 5:30 PM<!-- #EndDate --> </p>
     
     
     </body></html>
